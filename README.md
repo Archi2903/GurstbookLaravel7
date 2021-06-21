@@ -1,5 +1,6 @@
 <h1>Установка проекта</h1>
 
+Требования PHP 7 и выше, Mysql 8 и выше, Bootstrap 4 и выше 
 > Если у вас Операционная система Windows
 
 1. Скачиваем *Git Bush* по ссылке <a href=https://git-scm.com/downloads>Download Git Bush on Windows</a>
