@@ -1,0 +1,3 @@
+@section('guestbook')
+
+@endsection
