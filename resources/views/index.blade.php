@@ -13,16 +13,18 @@
                 <h5 class="mt-0">{{$record->name}}</h5>
                 <p>{{$record->record}} <p class="text-right">{{$record->updated_at}}</p></p>
             </div>
-            <br>
+
         </div>
     @endforeach
-    <br>
+    @if(session('success'))
+        <div class="alert alert-success">{{session('success')}}</div>
+    @endif
     <form class="needs-validation " method="post" action="{{route('record-form')}}">
         @csrf
         <div class="form-row">
             <div class="col-md-4 mb-3">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Brad" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="email">Email</label>
