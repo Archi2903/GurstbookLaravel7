@@ -17,6 +17,6 @@ Route::get('/', 'GuestbookController@getRecords')->name('main');
 Route::get('/about', 'MainController@about')->name('about');
 Route::get('/contact', 'MainController@contact')->name('contact');
 
-Route::post('/guestbook/record', 'GuestbookController@addRecord');
+Route::post('/guestbook/record', 'GuestbookController@addRecord')->name('record-form');
 
 
