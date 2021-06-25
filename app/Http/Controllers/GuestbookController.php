@@ -12,8 +12,7 @@ class GuestbookController extends Controller
     {
         $record = new Record;
         $record->name = $request->input('name');
-        $record->surname = $request->input('surname');
-        $record->username = $request->input('username');
+        $record->email = $request->input('email');
         $record->record = $request->input('record');
 
         $record->save();
@@ -22,7 +21,7 @@ class GuestbookController extends Controller
 
     public function getRecords()
     {
-         $records=new Record;
-         return view('index',['records'=>$records->all()]);
+        $records = new Record;
+        return view('index', ['records' => $records->all()]);
     }
 }

@@ -4,18 +4,20 @@
 @endsection
 @section('main_content')
     @foreach($records as $record)
+        <br>
         <div class="media border">
             <img src="https://image.flaticon.com/icons/png/512/1077/1077114.png" style="height:64px "
                  class="mr-3 rounded-circle border"
                  alt="user-avatar">
             <div class="media-body">
-                <h5 class="mt-0">{{$record->username}}</h5>
+                <h5 class="mt-0">{{$record->name}}</h5>
                 <p>{{$record->record}} <p class="text-right">{{$record->updated_at}}</p></p>
-
             </div>
+            <br>
         </div>
     @endforeach
-    <form class="needs-validation " method="post" action="guestbook/record">
+    <br>
+    <form class="needs-validation " method="post" action="{{route('record-form')}}">
         @csrf
         <div class="form-row">
             <div class="col-md-4 mb-3">
@@ -23,13 +25,9 @@
                 <input type="text" class="form-control" id="name" name="name" placeholder="Brad" required>
             </div>
             <div class="col-md-4 mb-3">
-                <label for="surname">Surname</label>
-                <input type="text" class="form-control" id="surname" name="surname" placeholder="Pitt" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="username">Username</label>
+                <label for="email">Email</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="username" name="username" placeholder="A@rchiBoys"
+                    <input type="email" class="form-control" id="email" name="email" placeholder="adress@mail.com"
                            required>
                 </div>
             </div>

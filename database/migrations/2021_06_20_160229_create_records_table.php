@@ -16,8 +16,7 @@ class CreateRecordsTable extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('surname');
-            $table->string('username');
+            $table->string('email');
             $table->text('record');
             $table->timestamps();
         });

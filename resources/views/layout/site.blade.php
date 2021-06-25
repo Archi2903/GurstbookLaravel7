@@ -6,9 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    Link icon-->
-    <link rel="shortcut icon"
-          href="https://image.flaticon.com/icons/png/512/2800/2800209.png"
-          type="image/x-icon">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/2800/2800209.png"type="image/x-icon">
+
     <!--    Link Bootstrap4.4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -20,11 +19,13 @@
     <!--    Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+HK&display=swap" rel="stylesheet">
+    <!--    link SCSS-->
+    <link rel="stylesheet" href="/css/app.css">
     <title> @yield('title') </title>
 </head>
 <!-- head -->
 
-<body class="container-sm bg-light">
+<body class="container-sm">
 
 <header class="bg-dark">
     <div class="container-fluid">
@@ -33,9 +34,9 @@
                 <m class="navbar-brand"><i class="bi bi-vector-pen" style="font-size: 1.5rem"></i></i>Guestbook</m>
                 <div class="collapse navbar-collapse">
                     <ul class=" navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Main</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('main')}}">Main</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('about')}}">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +64,8 @@
 
 <footer>
     <div class="row ">
-        <p class="col-12 text-center"> cover by @rchi<i class="bi bi-mouse-fill"></i><i class="bi bi-music-player-fill"></i></p>
+        <p class="col-12 text-center"> cover by @rchi<i class="bi bi-mouse-fill"></i><i
+                class="bi bi-music-player-fill"></i></p>
     </div>
 </footer>
 <!-- footer -->
