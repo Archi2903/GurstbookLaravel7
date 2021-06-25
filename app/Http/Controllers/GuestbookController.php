@@ -10,13 +10,13 @@ class GuestbookController extends Controller
 {
     public function addRecord(Request $request)
     {
-        $record = new Record;
+        $record = new Record();
         $record->name = $request->input('name');
         $record->email = $request->input('email');
         $record->record = $request->input('record');
 
         $record->save();
-        return redirect()->route('main');
+        return redirect()->route('main')->with('success','Your record add!');
     }
 
     public function getRecords()
