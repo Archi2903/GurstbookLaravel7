@@ -10,4 +10,5 @@
 - `php artisan migrate:fresh `
 - `php artisan serve`
 - Перейти по `URL` из консоли
- ![image](https://user-images.githubusercontent.com/77768569/122797612-52d64b80-d2c8-11eb-997b-b208ac661b73.png)
+- ![image](https://user-images.githubusercontent.com/77768569/123450523-80cbd080-d5e5-11eb-8cf3-332ff4c98c34.png)
+
