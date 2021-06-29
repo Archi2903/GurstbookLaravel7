@@ -2,8 +2,9 @@
 
 Требования к проекту: PHP 7.2.5, Web сервер Nginx 1.17, MySQL 8
 
-- `composer install`
+
 - `git clone https://github.com/Archi2903/GurstbookLaravel7.git`
+- `composer install`
 - `cp .env.example .env`
 - `php artisan key:generate`
 - Прописать `DB_DATABASE` в файле `.env`
