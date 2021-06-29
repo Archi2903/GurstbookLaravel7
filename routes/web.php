@@ -19,4 +19,9 @@ Route::get('/contact', 'MainController@contact')->name('contact');
 
 Route::post('/guestbook/record', 'GuestbookController@addRecord')->name('record-form');
 
+Route::get('/guestbook/record/{$id}/upload', 'GuestbookController@uploadRecord')->name('uploadRecordform');
+Route::get('/guestbook/record/{$id}/show', 'GuestbookController@showRecord')->name('showRecord');
+Route::post('/guestbook/record/{$id}/uploadSubmit', 'GuestbookController@uploadRecordSubmit')->name('uploadRecordSubmit');
+Route::get('/guestbook/record/{$id}/delete', 'GuestbookController@deleteRecord')->name('deleteRecord');
+
 
